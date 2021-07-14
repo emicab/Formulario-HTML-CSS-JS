@@ -1,0 +1,92 @@
+:root{
+    --color-neutral-900: hsl(210, 43%, 23%);
+    --color-link: #DC768C;
+    --color-accent-400: hsl(142, 83%, 48%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;    
+    background: #151e33;
+    font-family: sans-serif;
+    color: #fff;
+}
+.create{
+    background: #17213A;
+    width: 100%;
+    max-width: 785px;
+    min-width: 320px;
+    padding: 3rem;
+    border-radius: 15px;
+}
+a { color: var(--color-link); text-decoration: none;}
+.login{
+    text-align: right;
+}
+.content{
+    width: 65%;
+    margin:3rem auto;
+}
+.content h1{
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+.content p{
+    
+    font-size: 15px;
+    text-align: center;
+    line-height: 26px;
+    padding-bottom: 2rem;
+}
+.form{
+    width: 80%;
+    margin: 0 auto;
+}
+.form label{
+    display: block;
+    padding-bottom: .3rem;
+}
+.form input{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 19px;
+    outline: none;
+    color: #fff;
+}
+.form input:not([type="submit"]){
+    font-size: 18px;
+    background: none;
+    border: 2px solid #4C5C8A;
+    border-radius: 10px;
+}
+.form input[type="submit"]{
+    background: var(--color-link);
+    
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+input.submit.disabled{
+    background: rgb(180, 180, 180);
+    
+}
+.legal{
+    display: flex;
+    width: 80%;
+    background: #303c61;
+    padding: 2.5rem 1rem;
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+}
